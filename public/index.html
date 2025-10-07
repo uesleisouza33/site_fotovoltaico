@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Energia Solar em Tijucas</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800 font-sans">
+    <!-- HEADER -->
+    <header
+      class="bg-gradient-to-r from-blue-600 to-blue-800 text-white shadow-lg"
+    >
+      <div
+        class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between p-6"
+      >
+        <h1 class="text-3xl font-bold mb-4 md:mb-0">
+          Energia Solar em Tijucas
+        </h1>
+        <nav>
+          <ul class="flex flex-wrap gap-4 text-sm md:text-base">
+            <li>
+              <a
+                class="hover:text-yellow-300 cursor-pointer"
+                data-page-id="home"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-yellow-300 cursor-pointer"
+                data-page-id="efeito"
+                >Efeito</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-yellow-300 cursor-pointer"
+                data-page-id="placas"
+                >Placas</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-yellow-300 cursor-pointer"
+                data-page-id="componentes"
+                >Componentes</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-yellow-300 cursor-pointer"
+                data-page-id="comparativo"
+                >Comparativo</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-yellow-300 cursor-pointer"
+                data-page-id="radiacao"
+                >Radiação</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-yellow-300 cursor-pointer"
+                data-page-id="comparacao-regionais"
+                >Regiões</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-yellow-300 cursor-pointer"
+                data-page-id="vantagens"
+                >Vantagens</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-yellow-300 cursor-pointer"
+                data-page-id="mapa"
+                >Mapa</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-yellow-300 cursor-pointer"
+                data-page-id="conclusao"
+                >Conclusão</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-yellow-300 cursor-pointer"
+                data-page-id="referencias"
+                >Referências</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-bold text-yellow-300 cursor-pointer"
+                data-page-id="calculadora"
+                >Calculadora</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-6 space-y-12">
+      <!-- HOME -->
+      <section id="home" class="active space-y-6">
+        <h2 class="text-2xl font-semibold">Bem-vindo</h2>
+        <p>
+          A energia solar fotovoltaica é uma alternativa limpa e renovável com
+          custos em queda, tornando-se atraente para diversificar a matriz
+          energética e reduzir despesas com eletricidade. Este site apresenta um
+          estudo sobre a viabilidade do uso de energia solar em Tijucas (SC).
+        </p>
+        <h2 class="text-xl font-semibold">Perguntas Frequentes</h2>
+        <details class="p-4 border rounded-lg">
+          <summary class="cursor-pointer font-medium">
+            Qual a vida útil das placas solares?
+          </summary>
+          <p class="mt-2">
+            Em média 25 a 30 anos, com perda de eficiência gradual.
+          </p>
+        </details>
+        <details class="p-4 border rounded-lg">
+          <summary class="cursor-pointer font-medium">
+            É possível gerar energia à noite?
+          </summary>
+          <p class="mt-2">
+            Não. Mas sistemas híbridos podem armazenar energia em baterias.
+          </p>
+        </details>
+        <details class="p-4 border rounded-lg">
+          <summary class="cursor-pointer font-medium">
+            Qual o custo médio de instalação?
+          </summary>
+          <p class="mt-2">
+            Depende da quantidade de placas, inversor e complexidade da
+            instalação. Média entre R$15.000 e R$40.000 para residências.
+          </p>
+        </details>
+      </section>
+
+      <!-- EFEITO -->
+      <section id="efeito" class="hidden space-y-6">
+        <h2 class="text-2xl font-semibold">1. O efeito fotovoltaico</h2>
+        <p>
+          Quando a luz incide sobre semicondutores (ex.: silício), elétrons são
+          excitados e geram corrente elétrica. Células são conectadas formando
+          módulos e, em conjunto, painéis fotovoltaicos.
+        </p>
+        <img
+          src="./img/efeito_fotovoltaico.png"
+          alt="Como funciona sistema fotovoltaico"
+          class="mx-auto rounded-lg shadow-lg max-w-lg"
+        />
+        <h2 class="text-xl font-semibold">
+          Como funciona o efeito fotovoltaico
+        </h2>
+        <div class="flex justify-center">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/w52vMeeT7Kk?si=pAmmai-w7AaJ4GKv"
+            title="YouTube video player"
+            frameborder="0"
+            class="rounded-lg shadow-lg"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- PLACAS -->
+      <section id="placas" class="hidden space-y-6">
+        <h2 class="text-2xl font-semibold">2. Placas solares Intelbras</h2>
+        <p>
+          A Intelbras oferece módulos voltados a aplicações residenciais e
+          comerciais; destaque para níveis de eficiência e garantias locais.
+        </p>
+        <div class="overflow-x-auto">
+          <table
+            class="w-full border-collapse border border-gray-300 text-sm text-center"
+          >
+            <caption class="text-gray-600 py-2">
+              Tabela 1 – Modelos de painéis solares Intelbras
+            </caption>
+            <thead class="bg-gray-100">
+              <tr>
+                <th class="border p-2">Modelo</th>
+                <th class="border p-2">Potência (W)</th>
+                <th class="border p-2">Eficiência (%)</th>
+                <th class="border p-2">Garantia</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border p-2">RENO-C 555</td>
+                <td class="border p-2">555</td>
+                <td class="border p-2">21,5</td>
+                <td class="border p-2">
+                  12 anos (produto) / 30 anos (desempenho)
+                </td>
+              </tr>
+              <tr>
+                <td class="border p-2">EMSR-570B N-Type</td>
+                <td class="border p-2">570</td>
+                <td class="border p-2">21,8</td>
+                <td class="border p-2">
+                  12 anos (produto) / 30 anos (desempenho)
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- COMPONENTES -->
+      <section id="componentes" class="hidden space-y-4">
+        <h2 class="text-2xl font-semibold">3. Demais componentes do sistema</h2>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>
+            <strong>Estrutura de fixação:</strong> garante posicionamento e
+            resistência.
+          </li>
+          <li><strong>Inversor:</strong> converte DC para AC.</li>
+          <li><strong>Cabos e conectores:</strong> condução segura.</li>
+          <li>
+            <strong>String box/proteções:</strong> dispositivos de proteção.
+          </li>
+          <li>
+            <strong>Controladores e baterias:</strong> para sistemas off-grid ou
+            híbridos.
+          </li>
+          <li>
+            <strong>Medidores e monitoramento:</strong> acompanhamento em tempo
+            real.
+          </li>
+        </ul>
+      </section>
+
+      <!-- COMPARATIVO -->
+      <section id="comparativo" class="hidden space-y-6">
+        <h2 class="text-2xl font-semibold">
+          4. Comparativo com outra fabricante
+        </h2>
+        <p>
+          Comparando Intelbras com a Jinko Solar, observa-se que a Jinko costuma
+          oferecer módulos com maior potência e eficiência, enquanto a Intelbras
+          tem vantagem em assistência técnica local.
+        </p>
+        <div class="overflow-x-auto">
+          <table
+            class="w-full border-collapse border border-gray-300 text-sm text-center"
+          >
+            <caption class="text-gray-600 py-2">
+              Tabela 2 – Comparativo simplificado
+            </caption>
+            <thead class="bg-gray-100">
+              <tr>
+                <th class="border p-2">Fabricante</th>
+                <th class="border p-2">Potência (W)</th>
+                <th class="border p-2">Eficiência (%)</th>
+                <th class="border p-2">Garantia</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border p-2">Intelbras</td>
+                <td class="border p-2">555–570</td>
+                <td class="border p-2">até 21,8</td>
+                <td class="border p-2">12 anos / 30 anos (desempenho)</td>
+              </tr>
+              <tr>
+                <td class="border p-2">Jinko Solar</td>
+                <td class="border p-2">460–670</td>
+                <td class="border p-2">até 24,8</td>
+                <td class="border p-2">12 anos / 30 anos (desempenho)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- RADIAÇÃO -->
+      <section id="radiacao" class="hidden space-y-4">
+        <h2 class="text-2xl font-semibold">
+          5. Radiação solar em Tijucas (SC)
+        </h2>
+        <p class="text-gray-600">
+          Fontes: Atlas Brasileiro de Energia Solar (INPE), Global Solar Atlas.
+        </p>
+        <p>
+          Tijucas apresenta radiação média anual estimada entre
+          <strong>3,5 e 4,3 kWh/m²/dia</strong>. Estima-se que
+          <strong>1 kWp</strong> gere aproximadamente
+          <strong>120 a 140 kWh/mês</strong>, variando conforme estação e
+          condições locais.
+        </p>
+      </section>
+
+      <!-- COMPARAÇÃO REGIONAIS -->
+      <section id="comparacao-regionais" class="hidden space-y-4">
+        <h2 class="text-2xl font-semibold">
+          6. Comparação com as melhores regiões
+        </h2>
+        <p>
+          As regiões mais favoráveis (ex.: Sertão Nordestino, norte de Minas)
+          alcançam irradiação entre
+          <strong>5,5 e 6,5 kWh/m²/dia</strong>, permitindo gerar até 50% a mais
+          que em Tijucas.
+        </p>
+      </section>
+
+      <!-- VANTAGENS -->
+      <section id="vantagens" class="hidden space-y-4">
+        <h2 class="text-2xl font-semibold">Vantagens da Energia Solar</h2>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Redução de custos com energia elétrica</li>
+          <li>Energia limpa e renovável</li>
+          <li>Valorização do imóvel</li>
+          <li>Baixa manutenção</li>
+          <li>Incentivos e políticas públicas</li>
+        </ul>
+      </section>
+
+      <!-- CALCULADORA -->
+      <section id="calculadora" class="hidden space-y-4">
+        <h2 class="text-2xl font-semibold">Calculadora de Energia Solar</h2>
+        <label for="geracaoPorPlaca" class="block font-medium"
+          >Geração mensal da placa:</label
+        >
+        <input
+          type="number"
+          id="geracaoPorPlaca"
+          class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          placeholder="Geração por mês da placa"
+        />
+        <label for="consumo" class="block font-medium mt-4"
+          >Informe seu consumo mensal (kWh):</label
+        >
+        <input
+          type="number"
+          id="consumo"
+          class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          placeholder="kWh/mês"
+        />
+        <button
+          onclick="calcularPlacas()"
+          class="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+        >
+          Calcular
+        </button>
+        <p id="resultado" class="mt-4 font-semibold text-blue-700"></p>
+      </section>
+
+      <!-- MAPA -->
+      <section id="mapa" class="hidden space-y-4">
+        <h2 class="text-2xl font-semibold">Radiação Solar no Brasil</h2>
+        <img
+          src="./img/mapa.png"
+          alt="Mapa de radiação solar em Tijucas"
+          class="mx-auto rounded-lg shadow-lg max-w-3xl hover:scale-110 transition-transform duration-300"
+        />
+      </section>
+
+      <!-- CONCLUSÃO -->
+      <section id="conclusao" class="hidden space-y-4">
+        <h2 class="text-2xl font-semibold">Conclusão</h2>
+        <p>
+          A implantação de sistemas fotovoltaicos em Tijucas é viável e
+          compensadora, apesar da irradiação ser inferior à de regiões de alta
+          insolação. A escolha de módulos e a existência de suporte local
+          (assistência técnica) são fatores relevantes para o custo-benefício.
+        </p>
+      </section>
+
+      <!-- REFERÊNCIAS -->
+      <section id="referencias" class="hidden space-y-4">
+        <h2 class="text-2xl font-semibold">Referências</h2>
+        <ol class="list-decimal pl-6 space-y-2">
+          <li>Intelbras — Energia Solar — Painéis Solares. Acesso em 2025.</li>
+          <li>Jinko Solar — Catálogo de produtos. Acesso em 2025.</li>
+          <li>
+            LABREN / INPE — Atlas Brasileiro de Energia Solar. Acesso em 2025.
+          </li>
+          <li>Global Solar Atlas. Acesso em 2025.</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="bg-blue-800 text-white text-center py-4 mt-12">
+      <p>Ueslei Carvalho &copy; 2025 | Contato: ucarvalhof@gmail.com</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
