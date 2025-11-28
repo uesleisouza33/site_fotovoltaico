@@ -33,3 +33,15 @@ document.querySelectorAll("[data-page-id]").forEach((link) => {
     }
   });
 });
+
+document.getElementById("consumo").addEventListener("keydown", function(e) {
+  if (e.key === "Enter") {
+    calcularPlacas();
+  }
+});
+
+document.getElementById("geracaoPorPlaca").addEventListener("keydown", function(e) {
+  if (e.key === "Enter") {
+    calcularPlacas();
+  }
+});

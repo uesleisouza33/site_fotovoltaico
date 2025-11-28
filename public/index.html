@@ -20,88 +20,136 @@
         </h1>
         <nav>
           <ul class="flex flex-wrap gap-4 text-sm md:text-base">
-            <li>
+            <!-- Dropdown Teoria -->
+            <li class="relative group">
               <a
-                class="hover:text-yellow-300 cursor-pointer"
-                data-page-id="home"
-                >Home</a
+                class="cursor-pointer hover:text-yellow-300 font-medium flex items-center gap-2"
               >
-            </li>
-            <li>
-              <a
-                class="hover:text-yellow-300 cursor-pointer"
-                data-page-id="efeito"
-                >Efeito</a
+                Teoria
+                <svg
+                  class="w-3 h-3 align-middle transition-transform duration-200 group-hover:rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 320 512"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M140.3 376.8c12.6 10.2 31.1 9.5 42.8-2.2l128-128c9.2-9.2 11.9-22.9 6.9-34.9S301.4 192 288.5 192l-256 0c-12.9 0-24.6 7.8-29.6 19.8S.7 237.5 9.9 246.6l128 128 2.4 2.2z"
+                  />
+                </svg>
+              </a>
+
+              <ul
+                class="absolute left-0 top-full bg-white text-gray-800 shadow-lg rounded-lg min-w-[180px] z-50 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 delay-75"
               >
+                <li>
+                  <a
+                    class="block px-4 py-2 hover:bg-gray-100 hover:cursor-pointer"
+                    data-page-id="home"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="block px-4 py-2 hover:bg-gray-100 hover:cursor-pointer"
+                    data-page-id="efeito"
+                    >Efeito</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="block px-4 py-2 hover:bg-gray-100 hover:cursor-pointer"
+                    data-page-id="componentes"
+                    >Componentes</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="block px-4 py-2 hover:bg-gray-100 hover:cursor-pointer"
+                    data-page-id="comparativo"
+                    >Comparativo</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="block px-4 py-2 hover:bg-gray-100 hover:cursor-pointer"
+                    data-page-id="radiacao"
+                    >Radiação</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="block px-4 py-2 hover:bg-gray-100 hover:cursor-pointer"
+                    data-page-id="comparacao-regionais"
+                    >Regiões</a
+                  >
+                </li>
+              </ul>
             </li>
-            <li>
+
+            <!-- Dropdown Prático -->
+            <li class="relative group">
               <a
-                class="hover:text-yellow-300 cursor-pointer"
-                data-page-id="placas"
-                >Placas</a
+                class="cursor-pointer hover:text-yellow-300 font-medium flex items-center gap-2"
               >
-            </li>
-            <li>
-              <a
-                class="hover:text-yellow-300 cursor-pointer"
-                data-page-id="componentes"
-                >Componentes</a
+                Ferramentas
+                <svg
+                  class="w-3 h-3 align-middle transition-transform duration-200 group-hover:rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 320 512"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M140.3 376.8c12.6 10.2 31.1 9.5 42.8-2.2l128-128c9.2-9.2 11.9-22.9 6.9-34.9S301.4 192 288.5 192l-256 0c-12.9 0-24.6 7.8-29.6 19.8S.7 237.5 9.9 246.6l128 128 2.4 2.2z"
+                  />
+                </svg>
+              </a>
+              <ul
+                class="absolute left-0 top-full bg-white text-gray-800 shadow-lg rounded-lg min-w-[180px] z-50 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 delay-75"
               >
+                <li>
+                  <a
+                    class="block px-4 py-2 hover:bg-gray-100 hover:cursor-pointer"
+                    data-page-id="placas"
+                    >Placas</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="block px-4 py-2 hover:bg-gray-100 hover:cursor-pointer"
+                    data-page-id="calculadora"
+                    >Calculadora</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="block px-4 py-2 hover:bg-gray-100 hover:cursor-pointer"
+                    data-page-id="mapa"
+                    >Mapa</a
+                  >
+                </li>
+              </ul>
             </li>
+
+            <!-- Links diretos -->
             <li>
               <a
-                class="hover:text-yellow-300 cursor-pointer"
-                data-page-id="comparativo"
-                >Comparativo</a
-              >
-            </li>
-            <li>
-              <a
-                class="hover:text-yellow-300 cursor-pointer"
-                data-page-id="radiacao"
-                >Radiação</a
-              >
-            </li>
-            <li>
-              <a
-                class="hover:text-yellow-300 cursor-pointer"
-                data-page-id="comparacao-regionais"
-                >Regiões</a
-              >
-            </li>
-            <li>
-              <a
-                class="hover:text-yellow-300 cursor-pointer"
+                class="cursor-pointer hover:text-yellow-300"
                 data-page-id="vantagens"
                 >Vantagens</a
               >
             </li>
             <li>
               <a
-                class="hover:text-yellow-300 cursor-pointer"
-                data-page-id="mapa"
-                >Mapa</a
-              >
-            </li>
-            <li>
-              <a
-                class="hover:text-yellow-300 cursor-pointer"
+                class="cursor-pointer hover:text-yellow-300"
                 data-page-id="conclusao"
                 >Conclusão</a
               >
             </li>
             <li>
               <a
-                class="hover:text-yellow-300 cursor-pointer"
+                class="cursor-pointer hover:text-yellow-300"
                 data-page-id="referencias"
                 >Referências</a
-              >
-            </li>
-            <li>
-              <a
-                class="font-bold text-yellow-300 cursor-pointer"
-                data-page-id="calculadora"
-                >Calculadora</a
               >
             </li>
           </ul>
@@ -320,15 +368,133 @@
       </section>
 
       <!-- VANTAGENS -->
-      <section id="vantagens" class="hidden space-y-4">
-        <h2 class="text-2xl font-semibold">Vantagens da Energia Solar</h2>
-        <ul class="list-disc pl-6 space-y-2">
-          <li>Redução de custos com energia elétrica</li>
-          <li>Energia limpa e renovável</li>
-          <li>Valorização do imóvel</li>
-          <li>Baixa manutenção</li>
-          <li>Incentivos e políticas públicas</li>
-        </ul>
+      <section id="vantagens" class="hidden space-y-8">
+        <h2 class="text-3xl font-bold text-center text-blue-800">
+          Vantagens da Energia Solar
+        </h2>
+        <p class="text-center text-gray-600 max-w-2xl mx-auto">
+          Descubra por que investir em energia solar é uma decisão inteligente,
+          sustentável e econômica.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+          <div
+            class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-105"
+          >
+            <svg
+              class="w-10 h-10 text-yellow-500 mb-4"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path
+                d="M128 96l0-16c0-44.2 86-80 192-80S512 35.8 512 80l0 16c0 30.6-41.3 57.2-102 70.7-2.4-2.8-4.9-5.5-7.4-8-15.5-15.3-35.5-26.9-56.4-35.5-41.9-17.5-96.5-27.1-154.2-27.1-21.9 0-43.3 1.4-63.8 4.1-.2-1.3-.2-2.7-.2-4.1zM432 353l0-46.2c15.1-3.9 29.3-8.5 42.2-13.9 13.2-5.5 26.1-12.2 37.8-20.3l0 15.4c0 26.8-31.5 50.5-80 65zm0-96l0-33c0-4.5-.4-8.8-1-13 15.5-3.9 30-8.6 43.2-14.2s26.1-12.2 37.8-20.3l0 15.4c0 26.8-31.5 50.5-80 65zM0 240l0-16c0-44.2 86-80 192-80s192 35.8 192 80l0 16c0 44.2-86 80-192 80S0 284.2 0 240zm384 96c0 44.2-86 80-192 80S0 380.2 0 336l0-15.4c11.6 8.1 24.5 14.7 37.8 20.3 41.9 17.5 96.5 27.1 154.2 27.1s112.3-9.7 154.2-27.1c13.2-5.5 26.1-12.2 37.8-20.3l0 15.4zm0 80.6l0 15.4c0 44.2-86 80-192 80S0 476.2 0 432l0-15.4c11.6 8.1 24.5 14.7 37.8 20.3 41.9 17.5 96.5 27.1 154.2 27.1s112.3-9.7 154.2-27.1c13.2-5.5 26.1-12.2 37.8-20.3z"
+              />
+            </svg>
+            <h3 class="font-semibold text-lg mb-2">Economia na Conta</h3>
+            <p class="text-gray-600">
+              Reduza significativamente seus gastos com energia elétrica
+              mensalmente.
+            </p>
+          </div>
+
+          <div
+            class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-105"
+          >
+            <svg
+              class="w-10 h-10 text-green-500 mb-4"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path
+                d="M471.3 6.7C477.7 .6 487-1.6 495.6 1.2 505.4 4.5 512 13.7 512 24l0 186.9c0 131.2-108.1 237.1-238.8 237.1-77 0-143.4-49.5-167.5-118.7-35.4 30.8-57.7 76.1-57.7 126.7 0 13.3-10.7 24-24 24S0 469.3 0 456C0 381.1 38.2 315.1 96.1 276.3 131.4 252.7 173.5 240 216 240l80 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-80 0c-39.7 0-77.3 8.8-111 24.5 23.3-70 89.2-120.5 167-120.5 66.4 0 115.8-22.1 148.7-44 19.2-12.8 35.5-28.1 50.7-45.3z"
+              />
+            </svg>
+            <h3 class="font-semibold text-lg mb-2">Energia Limpa</h3>
+            <p class="text-gray-600">
+              Uma fonte 100% renovável que contribui para o meio ambiente.
+            </p>
+          </div>
+
+          <div
+            class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-105"
+          >
+            <svg
+              class="w-10 h-10 text-blue-500 mb-4"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 384 512"
+            >
+              <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path
+                d="M64 0C28.7 0 0 28.7 0 64L0 448c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-384c0-35.3-28.7-64-64-64L64 0zM176 352l32 0c17.7 0 32 14.3 32 32l0 80-96 0 0-80c0-17.7 14.3-32 32-32zM96 112c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zM240 96l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16zM96 240c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zm144-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16z"
+              />
+            </svg>
+            <h3 class="font-semibold text-lg mb-2">Valorização do Imóvel</h3>
+            <p class="text-gray-600">
+              Imóveis com energia solar tendem a ter maior valorização no
+              mercado.
+            </p>
+          </div>
+
+          <div
+            class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-105"
+          >
+            <svg
+              class="w-10 h-10 text-red-500 mb-4"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 512"
+            >
+              <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path
+                d="M246.9 18.3L271 3.8c21.6-13 46.3-19.8 71.5-19.8 36.8 0 72.2 14.6 98.2 40.7l63.9 63.9c15 15 23.4 35.4 23.4 56.6l0 30.9 19.7 19.7 0 0c15.6-15.6 40.9-15.6 56.6 0s15.6 40.9 0 56.6l-64 64c-15.6 15.6-40.9 15.6-56.6 0s-15.6-40.9 0-56.6L464 240 433.1 240c-21.2 0-41.6-8.4-56.6-23.4l-49.1-49.1c-15-15-23.4-35.4-23.4-56.6l0-12.7c0-11.2-5.9-21.7-15.5-27.4l-41.6-25c-10.4-6.2-10.4-21.2 0-27.4zM50.7 402.7l222.1-222.1 90.5 90.5-222.1 222.1c-25 25-65.5 25-90.5 0s-25-65.5 0-90.5z"
+              />
+            </svg>
+            <h3 class="font-semibold text-lg mb-2">Baixa Manutenção</h3>
+            <p class="text-gray-600">
+              Painéis solares exigem pouca manutenção, garantindo praticidade no
+              dia a dia.
+            </p>
+          </div>
+
+          <div
+            class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-105"
+          >
+            <svg
+              class="w-10 h-10 text-purple-500 mb-4"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+            >
+              <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path
+                d="M384 64c0-17.7 14.3-32 32-32l128 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-96 0 0 96c0 17.7-14.3 32-32 32l-96 0 0 96c0 17.7-14.3 32-32 32l-96 0 0 96c0 17.7-14.3 32-32 32L32 480c-17.7 0-32-14.3-32-32s14.3-32 32-32l96 0 0-96c0-17.7 14.3-32 32-32l96 0 0-96c0-17.7 14.3-32 32-32l96 0 0-96z"
+              />
+            </svg>
+            <h3 class="font-semibold text-lg mb-2">Incentivos</h3>
+            <p class="text-gray-600">
+              Aproveite políticas públicas e incentivos que tornam a energia
+              solar mais acessível.
+            </p>
+          </div>
+
+          <div
+            class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-105"
+          >
+          <svg class="w-10 h-10 text-teal-400 mb-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M128 32C92.7 32 64 60.7 64 96l0 240 64 0 0-240 384 0 0 240 64 0 0-240c0-35.3-28.7-64-64-64L128 32zM19.2 384C8.6 384 0 392.6 0 403.2 0 445.6 34.4 480 76.8 480l486.4 0c42.4 0 76.8-34.4 76.8-76.8 0-10.6-8.6-19.2-19.2-19.2L19.2 384z"/></svg>
+            <div class="p-1 text-center">
+              <h3 class="font-semibold text-lg mb-2">Tecnologia Moderna</h3>
+              <p class="text-gray-600">
+                Sistemas de energia solar utilizam tecnologia avançada para
+                máxima eficiência.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- CALCULADORA -->
