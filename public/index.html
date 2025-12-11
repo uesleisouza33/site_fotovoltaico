@@ -16,7 +16,7 @@
         class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between p-6"
       >
         <h1 class="text-3xl font-bold mb-4 md:mb-0">
-          Energia Solar em Tijucas-SC
+          <a href="">Energia Solar em Tijucas-SC</a>
         </h1>
         <nav>
           <ul class="flex flex-wrap gap-4 text-sm md:text-base">
@@ -141,8 +141,8 @@
             <li>
               <a
                 class="cursor-pointer hover:text-yellow-300"
-                data-page-id="conclusao"
-                >Conclusão</a
+                data-page-id="arduino"
+                >Arduino</a
               >
             </li>
             <li>
@@ -485,7 +485,17 @@
           <div
             class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-105"
           >
-          <svg class="w-10 h-10 text-teal-400 mb-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M128 32C92.7 32 64 60.7 64 96l0 240 64 0 0-240 384 0 0 240 64 0 0-240c0-35.3-28.7-64-64-64L128 32zM19.2 384C8.6 384 0 392.6 0 403.2 0 445.6 34.4 480 76.8 480l486.4 0c42.4 0 76.8-34.4 76.8-76.8 0-10.6-8.6-19.2-19.2-19.2L19.2 384z"/></svg>
+            <svg
+              class="w-10 h-10 text-teal-400 mb-4"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 512"
+            >
+              <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path
+                d="M128 32C92.7 32 64 60.7 64 96l0 240 64 0 0-240 384 0 0 240 64 0 0-240c0-35.3-28.7-64-64-64L128 32zM19.2 384C8.6 384 0 392.6 0 403.2 0 445.6 34.4 480 76.8 480l486.4 0c42.4 0 76.8-34.4 76.8-76.8 0-10.6-8.6-19.2-19.2-19.2L19.2 384z"
+              />
+            </svg>
             <div class="p-1 text-center">
               <h3 class="font-semibold text-lg mb-2">Tecnologia Moderna</h3>
               <p class="text-gray-600">
@@ -537,15 +547,297 @@
         />
       </section>
 
-      <!-- CONCLUSÃO -->
-      <section id="conclusao" class="hidden space-y-4">
-        <h2 class="text-2xl font-semibold">Conclusão</h2>
-        <p>
-          A implantação de sistemas fotovoltaicos em Tijucas é viável e
-          compensadora, apesar da irradiação ser inferior à de regiões de alta
-          insolação. A escolha de módulos e a existência de suporte local
-          (assistência técnica) são fatores relevantes para o custo-benefício.
-        </p>
+      <!-- Arduino -->
+      <section id="arduino" class="hidden py-8">
+        <div class="container mx-auto px-4">
+          <h2 class="text-2xl font-semibold mb-2">Arduino</h2>
+          <p class="mb-6 text-gray-700 dark:text-gray-300">
+            A implantação de sistemas fotovoltaicos em Tijucas é viável e
+            compensadora, apesar da irradiação ser inferior à de regiões de alta
+            insolação. A escolha de módulos e a existência de suporte local
+            (assistência técnica) são fatores relevantes para o custo-benefício.
+          </p>
+
+          <div
+            class="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+          >
+            <figure
+              class="bg-white dark:bg-gray-800 border rounded-lg p-3 shadow-sm"
+            >
+              <figcaption class="mb-2 text-sm font-medium">
+                Ligação no Tinkercad
+              </figcaption>
+              <button
+                class="w-full h-40 rounded-md overflow-hidden focus:outline-none"
+                data-type="image"
+                data-src="./img/niveis_iluminacao.png"
+                onclick="openLightbox(event)"
+              >
+                <img
+                  src="./img/niveis_iluminacao.png"
+                  alt="Print da ligação no Tinkercad"
+                  class="object-cover w-full h-full"
+                />
+              </button>
+            </figure>
+
+            <figure
+              class="bg-white dark:bg-gray-800 border rounded-lg p-3 shadow-sm"
+            >
+              <figcaption class="mb-2 text-sm font-medium">
+                Ligação física no protoboard
+              </figcaption>
+              <button
+                class="w-full h-40 rounded-md overflow-hidden focus:outline-none"
+                data-type="image"
+                data-src="./img/ligacao_niveis.png"
+                onclick="openLightbox(event)"
+              >
+                <img
+                  src="./img/ligacao_niveis.png"
+                  alt="Ligação física no protoboard"
+                  class="object-cover w-full h-full"
+                />
+              </button>
+            </figure>
+
+            <figure
+              class="bg-white dark:bg-gray-800 border rounded-lg p-3 shadow-sm"
+            >
+              <figcaption class="mb-2 text-sm font-medium">
+                Código C++ - níveis de iluminamento
+              </figcaption>
+              <pre
+                class="bg-gray-100 dark:bg-gray-900 p-2 rounded text-xs overflow-auto h-40"
+              >
+const int green = 2;
+const int yellow = 3;
+const int red = 4;
+
+const int leds[3] = {green, yellow, red};
+
+void setup() {
+  for (int i = 0; i &lt; 3; i++) {
+    pinMode(leds[i], OUTPUT);
+    digitalWrite(leds[i], LOW);
+  }
+  Serial.begin(9600);
+}
+
+void loop() {
+  int nivel = analogRead(A0);
+  Serial.print("Nivel: ");
+  Serial.println(nivel);
+
+  if (nivel &gt;= 900) {
+    digitalWrite(leds[0], HIGH);
+    digitalWrite(leds[1], LOW);
+    digitalWrite(leds[2], LOW);
+  }
+  else if (nivel &gt;= 600) {
+    digitalWrite(leds[0], LOW);
+    digitalWrite(leds[1], HIGH);
+    digitalWrite(leds[2], LOW);
+  }
+  else if (nivel &gt;= 300) {
+    digitalWrite(leds[0], LOW);
+    digitalWrite(leds[1], LOW);
+    digitalWrite(leds[2], HIGH);
+  }
+  else {
+    digitalWrite(leds[0], LOW);
+    digitalWrite(leds[1], LOW);
+    digitalWrite(leds[2], LOW);
+  }
+
+  delay(100);
+}
+</pre
+              >
+            </figure>
+
+            <figure
+              class="bg-white dark:bg-gray-800 border rounded-lg p-3 shadow-sm"
+            >
+              <figcaption class="mb-2 text-sm font-medium">
+                Vídeo - sistema físico funcionando
+              </figcaption>
+              <button
+                class="w-full h-40 rounded-md overflow-hidden focus:outline-none"
+                data-type="video"
+                data-src="./img/video_7seg.mp4"
+                onclick="openLightbox(event)"
+              >
+                <video
+                  src="./img/video_7seg.mp4"
+                  class="object-cover w-full h-full"
+                  muted
+                  playsinline
+                ></video>
+              </button>
+            </figure>
+
+            <figure
+              class="bg-white dark:bg-gray-800 border rounded-lg p-3 shadow-sm"
+            >
+              <figcaption class="mb-2 text-sm font-medium">
+                Medição da resistência no potenciômetro 10kΩ
+              </figcaption>
+              <button
+                class="w-full h-40 rounded-md overflow-hidden focus:outline-none"
+                data-type="image"
+                data-src="./img/print_resistor.jpeg"
+                onclick="openLightbox(event)"
+              >
+                <img
+                  src="./img/print_resistor.jpeg"
+                  alt="Medição resistência potenciômetro 10k"
+                  class="object-cover w-full h-full"
+                />
+              </button>
+            </figure>
+
+            <figure
+              class="bg-white dark:bg-gray-800 border rounded-lg p-3 shadow-sm"
+            >
+              <figcaption class="mb-2 text-sm font-medium">
+                Teste do display 7 segmentos no multímetro
+              </figcaption>
+              <button
+                class="w-full h-40 rounded-md overflow-hidden focus:outline-none"
+                data-type="image"
+                data-src="./img/print_7seg.jpeg"
+                onclick="openLightbox(event)"
+              >
+                <img
+                  src="./img/print_7seg.jpeg"
+                  alt="Teste do display de 7 segmentos"
+                  class="object-cover w-full h-full"
+                />
+              </button>
+            </figure>
+
+            <figure
+              class="bg-white dark:bg-gray-800 border rounded-lg p-3 shadow-sm"
+            >
+              <figcaption class="mb-2 text-sm font-medium">
+                Medida de tensão no sistema de LEDs (valor 300)
+              </figcaption>
+              <button
+                class="w-full h-40 rounded-md overflow-hidden focus:outline-none"
+                data-type="image"
+                data-src="./img/print_nivel_300.png"
+                onclick="openLightbox(event)"
+              >
+                <img
+                  src="./img/print_nivel_300.png"
+                  alt="Tensão sistema LEDs 300"
+                  class="object-cover w-full h-full"
+                />
+              </button>
+            </figure>
+
+            <figure
+              class="bg-white dark:bg-gray-800 border rounded-lg p-3 shadow-sm"
+            >
+              <figcaption class="mb-2 text-sm font-medium">
+                Medida de tensão no 7 segmentos (valor 700)
+              </figcaption>
+              <button
+                class="w-full h-40 rounded-md overflow-hidden focus:outline-none"
+                data-type="image"
+                data-src="./img/foto_7_seg.png"
+                onclick="openLightbox(event)"
+              >
+                <img
+                  src="./img/foto_7_seg.png"
+                  alt="Tensão 7 segmentos 700"
+                  class="object-cover w-full h-full"
+                />
+              </button>
+            </figure>
+
+            <figure
+              class="bg-white dark:bg-gray-800 border rounded-lg p-3 shadow-sm"
+            >
+              <figcaption class="mb-2 text-sm font-medium">
+               Monitor serial
+              </figcaption>
+              <button
+                class="w-full h-40 rounded-md overflow-hidden focus:outline-none"
+                data-type="image"
+                data-src="./img/print_monitor.png"
+                onclick="openLightbox(event)"
+              >
+                <img
+                  src="./img/print_monitor.png"
+                  alt="Print monitor serial"
+                  class="object-cover w-full h-full"
+                />
+              </button>
+            </figure>
+
+            <figure
+              class="bg-white dark:bg-gray-800 border rounded-lg p-3 shadow-sm"
+            >
+              <figcaption class="mb-2 text-sm font-medium">
+                j) Print - gráfico no Arduino
+              </figcaption>
+              <button
+                class="w-full h-40 rounded-md overflow-hidden focus:outline-none"
+                data-type="image"
+                data-src="./img/print_grafico.jpeg"
+                onclick="openLightbox(event)"
+              >
+                <img
+                  src="./img/print_grafico.jpeg"
+                  alt="Print do gráfico no Arduino"
+                  class="object-cover w-full h-full"
+                />
+              </button>
+            </figure>
+
+            <!-- <figure
+              class="bg-white dark:bg-gray-800 border rounded-lg p-3 shadow-sm"
+            >
+              <figcaption class="mb-2 text-sm font-medium">
+                k) Vídeo - captura do gráfico no Arduino
+              </figcaption>
+              <button
+                class="w-full h-40 rounded-md overflow-hidden focus:outline-none"
+                data-type="video"
+                data-src="/assets/video_grafico.mp4"
+                onclick="openLightbox(event)"
+              >
+                <video
+                  src="/assets/video_grafico-thumb.mp4"
+                  class="object-cover w-full h-full"
+                  muted
+                  playsinline
+                  preload="metadata"
+                ></video>
+              </button>
+            </figure> -->
+          </div>
+
+          <div
+            id="lightbox"
+            class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 p-4"
+          >
+            <div class="max-w-4xl w-full">
+              <button
+                class="mb-2 text-white text-sm float-right"
+                onclick="closeLightbox()"
+              >
+                Fechar ✕
+              </button>
+              <div
+                id="lightbox-content"
+                class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden p-3"
+              ></div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- REFERÊNCIAS -->
